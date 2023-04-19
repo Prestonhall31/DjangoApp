@@ -51,9 +51,9 @@ If we created db or models then we would see changes. The command makemigrations
 
 auth_user table should now exits. Running ```python manage.py createsuperuser``` should now work. 
 Created Admin User
-Username (leave blank to use 'prest'): Admin
-Email address: admin@test.com
-Password: test123
+Username (leave blank to use 'preston'): preston
+Email address: admin@gmail.com
+Password: testing321
 
 Now we can run the server again and attempt to log in as an admin. 
 
