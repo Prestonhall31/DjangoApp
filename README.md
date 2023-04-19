@@ -81,7 +81,7 @@ Need to import db
 from blog.models import Post
 from django.contrib.auth.models import User
 
-
+User.objects.all()
 
 # To View your Posts
 
