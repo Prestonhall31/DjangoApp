@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
+    'users.apps.UsersConfig', # Make sure to add this everytime you create a new app for the project. 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
