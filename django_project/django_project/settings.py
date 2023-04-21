@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Los_Angeles'
 
 USE_I18N = True
 
@@ -126,5 +126,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'blog-home' # https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-LOGIN_REDIRECT_URL
+LOGIN_URL = 'login' # Redirects to the login page.  https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-LOGIN_REDIRECT_URL
+
