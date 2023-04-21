@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig', # Make sure to add this everytime you create a new app for the project.
     'crispy_forms', # Installed django-crispy-forms from pip. Add Bootstrap4 pack at the bottom of this page. Load into the template
-    'crispy-bootstrap4',
+    'crispy_bootstrap4',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
