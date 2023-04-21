@@ -32,7 +32,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
-    'users.apps.UsersConfig', # Make sure to add this everytime you create a new app for the project. 
+    'users.apps.UsersConfig', # Make sure to add this everytime you create a new app for the project.
+    'crispy_forms', # Installed django-crispy-forms from pip. Add Bootstrap4 pack at the bottom of this page. Load into the template
+    'crispy-bootstrap4',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -123,3 +125,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
