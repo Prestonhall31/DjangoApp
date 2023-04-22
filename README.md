@@ -145,3 +145,55 @@ Update apps.py with ready function
 
 
 ## Adding pillow for pic resizing
+
+
+## Adding multiple blogs using json
+
+in the command line, open the python shell
+
+''' 
+>>> python manage.py shell
+>>> import json
+>>> from blog.models import Post
+>>> with open('post.json') as f:
+...   posts_joson = json.load(f)
+...
+>>> fro post in posts_json:
+...   post = Post(title=post['title'], content=post['content'], author_id=post['user_id])
+...   post.save()
+...   
+>>> exit()
+'''
+
+## Using Paginator in the SHell
+'''
+  >>> from django.core.paginator import Paginator
+  >>> posts = ['1',
+  KeyboardInterrupt
+  >>> posts = ['1','2','3','4','5']              
+  >>> p = Paginator(posts, 2)
+  >>> p.num_pages
+  3
+  >>> for page in p.page_range:
+  ...     print(page)
+  ...
+  1
+  2
+  3
+  >>> p1 = p.page(1)
+  >>> p1
+  <Page 1 of 3>
+  >>> p1.number
+  1
+  >>> p1.object_list
+  ['1', '2']
+  >>> p1.has_previous()
+  False
+  >>> p1.has_next()
+  True
+  >>> p1.next_page_number()
+  2
+  >>> exit()
+'''
+
+
