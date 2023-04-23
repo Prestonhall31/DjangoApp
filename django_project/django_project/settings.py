@@ -135,3 +135,16 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'blog-home' # https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-LOGIN_REDIRECT_URL
 LOGIN_URL = 'login' # Redirects to the login page.  https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-LOGIN_REDIRECT_URL
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USER_TLS = True
+EMAIL_HOST_USER = os.environ.get('DB_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('DB_PASS')
+
+
+# Set environment variables on your computer. Open Env Var on computer and then you can access
+
+# EMAIL_HOST_USER = os.environ.get('DB_USER')
+# EMAIL_HOST_PASSWORD = os.environ.get('DB_PASS')
